@@ -1,0 +1,16 @@
+1. ¿Cómo pasan argumentos desde el command line hacia un programa utilizando gdb?
+    1. run [arglist]
+2. ¿Cómo ponen un breakpoint, que se cumpla solo cuando ciertas condiciones son verdaderas? (ejemplo: cuando ciertas variables tienen algún valor en especifico)
+    1. break[file:]func y a ese breakpoint le agrego la condicion con cond n[expr]
+3. ¿Cómo ejecutan la siguiente linea de codigo de C en el programa, después haber parado en un breakpoint?
+    1. step o con el comando "n"
+4. ¿Cómo resumen un programa después de un breakpoint?
+    1. run o  C que es un continue
+5. ¿Cómo pueden ver el valor de una variable (inclusive una expresión como 1 + 2) en gdb?
+    1. p nos muestra el valor de cualquier expresion o variable
+6. ¿Cómo pueden configurar gdb para que imprima los valores de las variables cada step?
+    1. print[/f][expr] muestra el valor de una variable u operacion
+7. ¿Cómo pueden imprimir una lista de todas las variables y sus valores en la función actual?
+    1. info locals
+8. ¿Cómo se salen de gdb?
+    1. q
